@@ -13,7 +13,6 @@ pipeline {
             steps {
                 archiveArtifacts 'cowjar/target/*.jar'
                 archiveArtifacts 'cowsay/target/*.jar'
-                archiveArtifacts 'cowsay-parent/target/*.jar'
             }
         }
         
