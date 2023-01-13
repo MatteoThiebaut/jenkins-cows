@@ -23,10 +23,10 @@ pipeline {
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     nexusUrl: 'http://localhost:8081/repository/cow/',
-                    groupId: 'com.example',
-                    version: version,
+                    groupId: 'com.github.ricksbrown',
+                    version: '1.1.1-SNAPSHOT',
                     repository: 'cow',
-                 credentialsId: 'admin',
+                 credentialsId: 'nexuslogin',
                  artifacts: [
                         [artifactId: 'cowjar',
                        classifier: '',
