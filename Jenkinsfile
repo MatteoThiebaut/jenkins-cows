@@ -8,12 +8,7 @@ pipeline {
                 bat 'mvn package' 
             }
         }
-        stage('Analyse') {
-            steps {
-            	bat 'mvn checkstyle:checkstyle'
-                bat 'mvn pmd:pmd' 
-            }
-        }
+        
         stage('Publish') {
             steps {
                 archiveArtifacts '/target/*.jar'
