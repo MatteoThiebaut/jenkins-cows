@@ -15,4 +15,4 @@
 
 ## Projet
 
-[![Build Status](https://github.com/MatteoThiebaut/jenkins-cows.git)]
+[![Build Status](https://github.com/MatteoThiebaut/jenkins-cows?branch=main)]
