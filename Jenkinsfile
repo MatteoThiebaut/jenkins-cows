@@ -30,7 +30,7 @@ pipeline {
                  artifacts: [
                         [artifactId: 'cowjar',
                        classifier: '',
-                         file: 'cowsay/target/*.jar',
+                         file: 'cowjar/target/cowjar-1.1.1-SNAPSHOT.jar.jar',
                             type: 'jar']
                                 ]
                         )
