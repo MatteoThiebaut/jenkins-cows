@@ -15,4 +15,4 @@
 
 ## Projet
 
-[![Build Status](https://github.com/MatteoThiebaut/jenkins-cows?branch=main)]
+[![Build Status](http://localhost:8080/buildStatus/icon?job=cowPipeline)](http://localhost:8080/job/cowPipeline/)
