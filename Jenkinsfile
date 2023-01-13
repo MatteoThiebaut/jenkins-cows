@@ -25,17 +25,17 @@ pipeline {
                     nexusUrl: 'http://localhost:8081/repository/cow/',
                     groupId: 'com.example',
                     version: version,
-                    repository: 'RepositoryName',
-                 credentialsId: 'CredentialsId',
+                    repository: 'cow',
+                 credentialsId: 'admin',
                  artifacts: [
-                        [artifactId: projectName,
+                        [artifactId: 'cowjar',
                        classifier: '',
-                         file: 'my-service-' + version + '.jar',
+                         file: 'cowjar-1.1.1-SNAPSHOT.jar',
                             type: 'jar']
-        ]
-     )
+                                ]
+                        )
                     }
+        }
     }
-}
 }
 
