@@ -12,8 +12,8 @@ pipeline {
         
         stage('Publish') {
             steps {
-                archiveArtifacts 'cowjar/target/*.jar'
-                archiveArtifacts 'cowsay/target/*.jar'
+                archiveArtifacts artifacts: 'cowjar/target/*.jar'
+                archiveArtifacts artifacts: 'cowsay/target/*.jar'
             }
             
         }
@@ -30,7 +30,7 @@ pipeline {
                  artifacts: [
                         [artifactId: 'cowjar',
                        classifier: '',
-                         file: '.jar',
+                         file: 'cowsay/target/*.jar',
                             type: 'jar']
                                 ]
                         )
