@@ -15,6 +15,3 @@
 
 ## Projet
 
-Build status :
-
-[![Build Status]]
